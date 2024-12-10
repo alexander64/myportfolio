@@ -1,0 +1,37 @@
+/* main.css - Hub di stile */
+
+:root {
+    --first-color: #070F2B;
+    --second-color: #1B1A55;
+    --third-color: #535C91;
+    --fourth-color: #9290C3;
+    --second-inverted-color: #E4E5AA;
+    --online-color: #28a745;
+    --red-color: #ff4d4d;
+    --red-hover-color: #ff1a1a88;
+    --text-light-color: #c4c1e0;
+    --second-text-color: white;
+    --csv-color: #005003ad;
+    --json-color: #f57c00;
+    --background-color-1: #1C2841; /* for --first-color */
+    --background-color-2: #2C2A70; /* for --second-color */
+    --background-color-3: #6D74A6; /* for --third-color */
+    --background-color-4: #B0B0D9; /* for --fourth-color */
+    --backgroun-gradient-color: linear-gradient(8deg, var(--first-color), var(--third-color));
+  }
+
+
+/* Importa il CSS generale */
+@import url('App.css');
+
+/* Importa il CSS home */
+@import url('home.css');
+
+/* Importa il CSS menù contestuale */
+@import url('contextual.css');
+
+/* Importa il CSS menù contestuale */
+@import url('modal.css');
+
+/* Importa il CSS menù contestuale */
+@import url('responsive.css');

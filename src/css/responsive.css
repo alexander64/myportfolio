@@ -1,0 +1,22 @@
+/* Media Queries */
+@media (max-width: 768px) {
+    .dropdown-menu {
+      width: 150px;
+    }
+  
+    .floating-menu-button {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+    }
+  
+    .developer-list,
+    .project-list {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .modal-content {
+      width: 90%;
+    }
+  }
