@@ -6,9 +6,9 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Benvenuti in DevCompany</h1>
+          <h1>CLOUD COMPUTERS</h1>
           <p>
-            Siamo specializzati nella creazione di soluzioni tecnologiche innovative per aziende e professionisti.
+            Tutto quello di cui ha bisogno la tua attività all'avanguardia!
           </p>
         </div>
       </section>
@@ -19,43 +19,43 @@ const Home = () => {
         <div className="service-list">
           <div className="service-item">
             <h3>Sviluppo Software</h3>
-            <p>Soluzioni personalizzate per ogni esigenza aziendale.</p>
-          </div>
-          <div className="service-item">
-            <h3>Automazione dei Processi</h3>
             <p>
-              Implementazione di tecnologie avanzate per migliorare l'efficienza.
+              Soluzioni personalizzate per ogni esigenza aziendale.
             </p>
           </div>
           <div className="service-item">
-            <h3>Analisi Dati</h3>
+            <h3>Infrastrutture</h3>
             <p>
-              Trasformiamo i dati in informazioni strategiche per il tuo business.
+              In cloud e dentro la tua azienda.
+            </p>
+          </div>
+          <div className="service-item">
+            <h3>ARCHITET</h3>
+            <p>
+              Il tuo strumento di lavoro sempre disponibile sempre performante.
             </p>
           </div>
         </div>
       </section>
 
       {/* Mission e Valori */}
-      <section className="mission">
-        <h2>La nostra missione</h2>
+      <section className="hero">
+        <h2>La nostra mission</h2>
         <p>
-          Supportare aziende e professionisti nella digitalizzazione e ottimizzazione dei processi,
-          offrendo soluzioni innovative e su misura.
+          Mantenere la tua azienda competitiva in un mercato sempre più digitalizzato attraverso soluzioni su misura per i tuoi processi e le tue esigenze.
         </p>
       </section>
 
       {/* Team */}
-      <section className="team">
+      <section className="team-card">
         <h2>Il nostro team</h2>
         <p>
-          Il nostro team è composto da esperti in vari settori tecnologici,
-          pronti a trasformare le tue idee in realtà.
+          Il nostro team è composto da esperti sviluppatori e sistemisti specializzati pronti a trasformare le tue idee in realtà.
         </p>
       </section>
 
       {/* Contatto */}
-      <section className="contact">
+      <section className="hero">
         <h2>Contattaci</h2>
         <p>
           Sei interessato ai nostri servizi? <a href="/contact">Contattaci</a> per ulteriori informazioni.

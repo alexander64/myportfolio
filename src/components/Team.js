@@ -11,6 +11,20 @@ const developers = [
     description: "Experienced in React, CSS, and JavaScript.",
     skills: ["React", "CSS", "JavaScript"],
   },
+  {
+    name: "Mio Zio",
+    role: "Porta da mangiare",
+    photo: assets.developerPhoto, // Sostituisci con un'immagine diversa se disponibile
+    description: "Specialized in Node.js, databases, and API development.",
+    skills: ["Node.js", "MongoDB", "Express.js"],
+  },
+  {
+    name: "Mio cugino",
+    role: "Porta la droga",
+    photo: assets.developerPhoto, // Sostituisci con un'immagine diversa se disponibile
+    description: "Expert in user experience and interface design.",
+    skills: ["Figma", "Adobe XD", "CSS"],
+  },
 ];
 
 const Team = () => {
@@ -18,7 +32,8 @@ const Team = () => {
 
   return (
     <section className="team">
-      <h1>Our Team</h1>
+      <h1>Meet Our Team</h1>
+      <p>Our team is composed of skilled professionals dedicated to delivering high-quality solutions.</p>
       <div className="developer-list">
         {developers.map((dev, index) => (
           <DeveloperCard

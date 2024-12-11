@@ -17,7 +17,10 @@
     --background-color-2: #2C2A70; /* for --second-color */
     --background-color-3: #6D74A6; /* for --third-color */
     --background-color-4: #B0B0D9; /* for --fourth-color */
-    --backgroun-gradient-color: linear-gradient(8deg, var(--first-color), var(--third-color));
+    --background-gradient-color: linear-gradient(8deg, var(--first-color), var(--third-color));
+    --gradient-1-color: linear-gradient(to bottom right, var(--first-color), var(--second-color));  /* Colori traslucidi per l'effetto vetro */
+    --frosted-glass-blur: 700px; /* Livello di sfocatura */
+    --frosted-glass-shadow: rgba(0, 0, 0, 0.1); /* Ombra sottile */
   }
 
 

@@ -1,59 +1,65 @@
 /* Bottone volante */
 .floating-menu-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: #222;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .floating-menu-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Menu a tendina */
-  .dropdown-menu {
-    position: absolute;
-    top: 80px;
-    left: 20px;
-    background-color: #333;
-    color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    padding: 10px 0;
-    width: 200px;
-  }
-  
-  .dropdown-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .dropdown-menu li {
-    text-align: center;
-    margin: 5px 0;
-  }
-  
-  .dropdown-menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    padding: 10px;
-    transition: background-color 0.2s;
-  }
-  
-  .dropdown-menu li a:hover {
-    background-color: #444;
-  }
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: var(--first-color); /* Rispetta il colore specificato */
+  color: var(--text-light-color); /* Testo */
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  z-index: 9001; /* Posiziona il bottone sopra gli altri elementi */
+}
+
+.floating-menu-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu a tendina */
+.dropdown-menu {
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  background-color: var(--second-color); /* Rispetta il colore specificato */
+  color: var(--text-light-color); /* Testo */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9000; /* Assicurati che sia sopra altri elementi */
+  padding: 10px 0;
+  width: 200px;
+  display: none; /* Nascondi di default */
+}
+
+.dropdown-menu.open {
+  display: block; /* Mostra il menu quando aperto */
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.dropdown-menu li a {
+  color: var(--text-light-color); /* Rispetta il colore specificato */
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.2s;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #444; /* Colore di hover */
+}
